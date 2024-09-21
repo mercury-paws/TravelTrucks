@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import css from "./TruckInfo.module.css";
 import BookTruck from "../BookTruck/BookTruck";
 
@@ -24,6 +24,7 @@ export default function TruckInfo() {
       <div>
         <Link to="/features">Features</Link>
         <Link to="/reviews">Reviews</Link>
+        <Outlet />
         <BookTruck />
       </div>
     </>

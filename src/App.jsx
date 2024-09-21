@@ -1,13 +1,20 @@
+import "./App.css";
+import CatalogPage from "./pages/Catalog/CatalogPage";
+import Homepage from "./pages/HomePage/HomePage";
 import Layout from "./components/Layout/Layout";
-import HomePage from "./pages/HomePage/HomePage";
-import { Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
-export default function App() {
+function App() {
   return (
     <>
       <Layout>
-        <Route path="/" element={<HomePage />} />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/catalog" element={<CatalogPage />} />
+        </Routes>
       </Layout>
     </>
   );
 }
+
+export default App;
