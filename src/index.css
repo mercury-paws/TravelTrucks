@@ -1,26 +1,44 @@
 :root {
-  font-family: Montserrat, sans-serif;
+  --font-family: "Inter", sans-serif;
+  --main: #101828;
+  --text: #475467;
+  --white: #fff;
+  --inputs: #f7f7f7;
+  --badges: #f2f4f7;
+  --gray: #6c717b;
+  --gray-light: #dadde1;
+  --button: #e44848;
+  --button-hover: #d84343;
+  --rating: #ffc531;
+
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(22, 22, 22, 0.87);
   background-color: #f5f5f5;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+input {
+  font-family: inherit;
+}
 
 body {
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.02em;
+  box-sizing: border-box;
 }
+
 a {
   text-decoration-line: none;
   text-decoration: none;
@@ -74,4 +92,17 @@ img {
 
 button {
   cursor: pointer;
+  background-color: var(--button);
+  border-radius: 200px;
+  padding: 16px 40px;
+  width: 173px;
+  height: 56px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  box-shadow: none;
+  border: none;
 }
