@@ -1,0 +1,12 @@
+.location {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+}
+.mapInput {
+  width: 170px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+}

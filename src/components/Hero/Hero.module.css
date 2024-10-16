@@ -3,12 +3,8 @@
 }
 .hero {
   height: 696px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../../assets/pictures/hero/heroComp.jpg);
+  background-image: url(../../assets/pictures/hero/heroComp.jpg),
+    linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   background-size: cover;
   background-repeat: no repeat;
   max-width: 1440px;

@@ -28,6 +28,8 @@
 }
 input {
   font-family: inherit;
+  background-color: var(--badges);
+  color: var(--main);
 }
 
 body {
