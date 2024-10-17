@@ -6,9 +6,15 @@ import css from "./CatalogPage.module.css";
 export default function CatalogPage() {
   return (
     <div className={css.catalogContainer}>
-      <Location />
-      <Filters />
-      <TruckList />
+      <div className={css.catalogLocation}>
+        <Location />
+      </div>
+      <div className={css.catalogFilters}>
+        <Filters />
+      </div>
+      <div className={css.catalogTruckList}>
+        <TruckList />
+      </div>
     </div>
   );
 }

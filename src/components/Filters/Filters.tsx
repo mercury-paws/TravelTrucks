@@ -4,13 +4,13 @@ import css from "./Filters.module.css";
 
 export default function Filters() {
   return (
-    <>
-      <p>These are Filters</p>
+    <div className={css.filtersContainer}>
+      <p className={css.filters}>Filters</p>
       <Equipment />
       <Type />
       <button type="submit" className={css.submitBtn}>
         Search
       </button>
-    </>
+    </div>
   );
 }

@@ -24,7 +24,7 @@ export default function Location() {
   };
 
   return (
-    <>
+    <div className={css.locationContainer}>
       <p className={css.location}>Location</p>
       <input
         type="text"
@@ -41,6 +41,6 @@ export default function Location() {
           initialPosition={position}
         />
       )}
-    </>
+    </div>
   );
 }

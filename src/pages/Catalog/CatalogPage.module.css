@@ -1,0 +1,32 @@
+.catalogContainer {
+  display: grid;
+  grid-template-rows: 150px auto auto;
+  row-gap: 20px;
+  column-gap: 20px;
+  grid-template-areas:
+    "l"
+    "f"
+    "tl";
+}
+
+@media screen and (min-width: 480px) {
+  .catalogContainer {
+    display: grid;
+    grid-template-areas:
+      "l tl"
+      "f tl"
+      ". tl"
+      ". tl";
+    grid-template-columns: repeat(autofit, min-max(80px, 2fr));
+  }
+
+  .catalogLocation {
+    grid-area: l;
+  }
+  .catalogFilters {
+    grid-area: f;
+  }
+  .catalogcatalogTruckList {
+    grid-area: tl;
+  }
+}
