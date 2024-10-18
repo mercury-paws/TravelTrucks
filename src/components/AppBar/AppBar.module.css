@@ -4,7 +4,8 @@
   justify-content: space-around;
   align-items: center;
   height: 72px;
-  background-color: #fafafa;
+  background-color: var(--badges);
   border-bottom: 1px solid var(--badges);
-  background: var(--white);
+  /* background: var(--grey-light); */
+  margin-bottom: 48px;
 }
